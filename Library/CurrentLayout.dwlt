@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 208, y: 124}
   m_MaxSize: {x: 8008, y: 4024}
   vertical: 0
-  controlID: 606
+  controlID: 120
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -93,8 +93,8 @@ MonoBehaviour:
     y: 0
     width: 102
     height: 767
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 102, y: 124}
+  m_MaxSize: {x: 4002, y: 4024}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -192,7 +192,7 @@ MonoBehaviour:
   m_MinSize: {x: 613, y: 398}
   m_MaxSize: {x: 18008, y: 14048}
   vertical: 0
-  controlID: 604
+  controlID: 66
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 398}
   m_MaxSize: {x: 10004, y: 14048}
   vertical: 1
-  controlID: 605
+  controlID: 119
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -330,8 +330,8 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
+      m_SelectedIDs: b60b0000
+      m_LastClickedID: 2998
       m_ExpandedIDs: d4fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -372,8 +372,7 @@ MonoBehaviour:
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
-    m_Image: {fileID: 2318424515335265636, guid: 0000000000000000d000000000000000,
-      type: 0}
+    m_Image: {fileID: 0}
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
@@ -388,9 +387,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.5542732, y: 0.9296409, z: -0.029296875}
+    m_Target: {x: -4.202223, y: -3.3400002, z: 0}
     speed: 2
-    m_Value: {x: 0.5542732, y: 0.9296409, z: -0.029296875}
+    m_Value: {x: -4.202223, y: -3.3400002, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -422,9 +421,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 13.342323
+    m_Target: 3.2176692
     speed: 2
-    m_Value: 13.342323
+    m_Value: 3.2176692
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -606,20 +605,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Sprites
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 91
   m_LastFolders:
-  - Assets/Sprites
+  - Assets/Scripts
   m_LastFoldersGridSize: 91
   m_LastProjectPath: C:\Users\Austin's PC\Documents\GameDev\2d game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 60280000
-    m_LastClickedID: 10336
-    m_ExpandedIDs: 000000005209000000ca9a3b
+    m_SelectedIDs: 100a0000
+    m_LastClickedID: 2576
+    m_ExpandedIDs: 000000005409000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -647,7 +646,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 
+    m_ExpandedIDs: 0000000054090000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
