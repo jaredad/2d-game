@@ -2,23 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerCam : MonoBehaviour
+public class PlayerCam : MonoBehaviour
 {
-    private GameObject player;
-    public float xMin;
-    public float YMin;
-    public float xMax;
-    public float yMax;
+    public GameObject player;
+    private Vector3 offset;
+
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        offset = transform.position - player.transform.position;
 
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        
+        transform.position = new Vector3(player.transform.position.x, 5.42f, -10f);
     }
 }

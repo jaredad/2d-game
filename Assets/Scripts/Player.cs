@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public int playerSpeed = 10;
+    public int playerSpeed;
     private bool facingRight = true;
-    public int jumpPower = 1250;
+    public int jumpPower;
     private float moveX;
+    private Animator anim;
+    private Vector2 moveDirection = Vector2.zero;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -23,34 +25,20 @@ public class Player : MonoBehaviour
 
     void playerMove()
     {
+        CharacterController player = GetComponent<CharacterController>();
+
         if (Input.GetButtonDown("Jump"))
         {
             Jump();
         }
-        moveX = Input.GetAxis("Horizontal");
 
-        if(moveX < 0.0f && facingRight == true)
-        {
-            FlipPlayer();
-        } else if(moveX >0.0f && facingRight == false)
-        {
-            FlipPlayer();
-        }
-
+        moveX = 1f;
         gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(moveX * playerSpeed, gameObject.GetComponent<Rigidbody2D>().velocity.y);
     }
 
     void Jump()
     {
         GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpPower);
-
-    }
-
-    void FlipPlayer()
-    {
-        facingRight = !facingRight;
-        Vector2 s = gameObject.transform.localScale;
-        s.x *= -1;
-        transform.localScale = s;
+        anim.SetTrigger("play");
     }
 }
