@@ -62,8 +62,8 @@
   <ItemGroup>
     <Compile Include="Assets\Assets\CyberPunk\Scripts\Done_BGScroller.cs" />
     <Compile Include="Assets\Assets\CyberPunk\Scripts\Perspective2DSortMode.cs" />
-    <Compile Include="Assets\Scripts\ObjectPooler.cs" />
-    <Compile Include="Assets\Scripts\ObstacleGenerator.cs" />
+    <Compile Include="Assets\Scripts\End.cs" />
+    <Compile Include="Assets\Scripts\Obstacle.cs" />
     <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerCam.cs" />
     <Compile Include="Assets\Scripts\Scrolling.cs" />

@@ -13,7 +13,6 @@ public class Scrolling : MonoBehaviour
     private float viewZone = 10;
     private int leftIndex;
     private int rightIndex;
-    private ObstacleGenerator obstacleGenrator;
 
     private float camPosition;
 
@@ -34,7 +33,6 @@ public class Scrolling : MonoBehaviour
     private void ScrollLeft()
     {
         layers[rightIndex].position = new Vector2((layers[leftIndex].position.x - backgroundSize), layers[leftIndex].position.y);
-        obstacleGenrator.SpawnObstacles(new Vector3(transform.position.x, -1.41f, 0f));
 
         leftIndex = rightIndex;
         rightIndex = rightIndex - 1;

@@ -41,4 +41,18 @@ public class Player : MonoBehaviour
         GetComponent<Rigidbody2D>().AddForce(Vector2.up * jumpPower);
         anim.SetTrigger("play");
     }
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Obstacle")
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
+            Debug.Log("Hello");
+        }
+        else if(collision.gameObject.tag == "End")
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Win");
+            Debug.Log("Goodbye");
+        }
+    }
 }
